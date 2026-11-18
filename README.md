@@ -8,7 +8,7 @@ Página executiva do CRA-SP em React e TypeScript, com o padrão visual do Work:
 | --- | ---: | ---: |
 | Componente Curricular ASG e ODS | 13 | 48 |
 | CRA-SP Educa | 13 | 34 |
-| Programa de Desenvolvimento Profissional | 14 | 48 |
+| Programa de Desenvolvimento Profissional | 15 | 50 |
 
 Cada produto apresenta quatro KPIs executivos, um gráfico de colunas e um gráfico de rosca na mesma linha em telas maiores, seguidos da matriz completa. No celular, os gráficos se empilham e a matriz mantém todas as colunas com rolagem horizontal.
 
@@ -19,6 +19,8 @@ Ao lado do título, cada matriz apresenta o total de **dimensões** e de **ponto
 O botão **Baixar Excel** gera um arquivo `.xlsx` com a matriz de oito colunas, os critérios de leitura e uma aba **Pontos de verificação**, que identifica cada ponto e sua dimensão de origem. Os valores sugeridos das metas são preservados e aparecem entre parênteses, como `(60%)` e `(90) dias`. Parâmetros dos modelos, referências a cláusulas e escalas de avaliação conservam sua identificação original.
 
 A matriz possui colunas separadas para número, eixo (componente, na matriz ASG e ODS), dimensão, momento/etapa, o que acompanhar, por que acompanhar, indicadores e metas. O PDP conserva a sequência Cursos Livres, Trilhas de Aprendizagem, Distinção Profissional, Pós-graduação e Certificações de Mercado, incluindo as duas modalidades dos dois últimos eixos.
+
+A dimensão **Reconhecimento pelo mercado**, no eixo Distinção Profissional, acompanha o valor atribuído ao selo pelos RHs nos processos seletivos e seu reconhecimento pelos empregadores, mediante pesquisas voluntárias. As metas dessa dimensão serão definidas a partir da linha de base.
 
 ## Dados e referências
 
@@ -50,6 +52,6 @@ npm run build
 
 O build é gerado em `dist/`. A página funciona sem chave de API ou configuração de servidor. Os links `#asg`, `#educa` e `#pdp` abrem diretamente o produto correspondente.
 
-Os testes verificam a integridade dos 40 itens, a ordem dos eixos, as modalidades, a renderização dos oito campos e a ausência de dados de execução fictícios. A navegação por teclado, os três produtos, o atalho para o conteúdo e a apresentação em telas de 320, 390, 1024 e 1440 pixels também foram conferidos em Chromium.
+Os testes verificam a integridade das 41 dimensões, a ordem dos eixos, as modalidades, a renderização dos oito campos e a ausência de dados de execução fictícios. A navegação por teclado, os três produtos, o atalho para o conteúdo e a apresentação em telas de 320, 390, 1024 e 1440 pixels também foram conferidos em Chromium.
 
 Fonte Plus Jakarta Sans distribuída localmente, sob licença SIL Open Font License; licença em `public/fonts/OFL.txt`.

@@ -5,7 +5,7 @@ import { products } from '../src/data/products';
 import { buildMatrixWorkbook } from '../src/lib/exportMatrix';
 import type { ProductDefinition, ProductId } from '../src/types';
 
-const expectedCounts: Record<ProductId, number> = { asg: 13, educa: 13, pdp: 14 };
+const expectedCounts: Record<ProductId, number> = { asg: 13, educa: 13, pdp: 15 };
 
 async function reopen(product: ProductDefinition) {
   const original = await buildMatrixWorkbook(product);

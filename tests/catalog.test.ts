@@ -12,8 +12,8 @@ const requiredTextFields = [
   'axis', 'dimension', 'stage', 'monitor', 'purpose', 'indicators', 'target',
 ] as const satisfies readonly (keyof MatrixRow)[];
 
-const expectedRowCounts: Record<ProductId, number> = { asg: 13, educa: 13, pdp: 14 };
-const expectedVerificationCounts: Record<ProductId, number> = { asg: 48, educa: 34, pdp: 48 };
+const expectedRowCounts: Record<ProductId, number> = { asg: 13, educa: 13, pdp: 15 };
+const expectedVerificationCounts: Record<ProductId, number> = { asg: 48, educa: 34, pdp: 50 };
 const pdpAxisOrder = [
   'Cursos Livres', 'Trilhas de Aprendizagem', 'Distinção Profissional',
   'Pós-graduação', 'Certificações de Mercado',

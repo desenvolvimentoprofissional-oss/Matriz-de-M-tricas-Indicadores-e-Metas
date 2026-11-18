@@ -152,6 +152,20 @@ export const pdpRows: readonly MatrixRow[] = [
   },
   {
     number: 11,
+    axis: "Distinção Profissional",
+    dimension: "Reconhecimento pelo mercado",
+    stage: "Avaliação externa por RHs e empregadores",
+    monitor: "Valor atribuído à Distinção nos processos seletivos e reconhecimento do selo pelos empregadores.",
+    purpose: "Verificar se a Distinção é conhecida e valorizada pelo mercado de trabalho.",
+    indicators: "Percentual de RHs respondentes que atribuem valor à Distinção em processos seletivos; percentual de empregadores respondentes que reconhecem o selo.",
+    target: "Estabelecer a linha de base com pesquisas voluntárias junto a RHs e empregadores e definir metas de evolução para a valorização da Distinção em processos seletivos e para o reconhecimento do selo.",
+    verificationPoints: [
+      "Valor atribuído à Distinção pelos RHs nos processos seletivos",
+      "Reconhecimento do selo pelos empregadores",
+    ],
+  },
+  {
+    number: 12,
     axis: "Pós-graduação",
     dimension: "Acesso, cobertura e execução",
     stage: "Bolsas integrais custeadas pelo CRA-SP",
@@ -169,7 +183,7 @@ export const pdpRows: readonly MatrixRow[] = [
     ],
   },
   {
-    number: 12,
+    number: 13,
     axis: "Pós-graduação",
     dimension: "Acesso e benefício econômico",
     stage: "Ofertas com condições diferenciadas e descontos",
@@ -185,7 +199,7 @@ export const pdpRows: readonly MatrixRow[] = [
     ],
   },
   {
-    number: 13,
+    number: 14,
     axis: "Certificações de Mercado",
     dimension: "Acesso e obtenção",
     stage: "Bolsas integrais cedidas pelas instituições",
@@ -201,7 +215,7 @@ export const pdpRows: readonly MatrixRow[] = [
     ],
   },
   {
-    number: 14,
+    number: 15,
     axis: "Certificações de Mercado",
     dimension: "Acesso e benefício econômico",
     stage: "Ofertas com descontos",
