@@ -61,7 +61,7 @@ export const products: readonly ProductDefinition[] = [
     ],
     kpis: [
       { id: 'people', label: 'Usuários cadastrados', description: 'Pessoas com perfil completo no Educa', unit: 'count', value: null },
-      { id: 'enrollments', label: 'Matrículas declaradas', description: 'Registros de matrícula informados pelos usuários', unit: 'count', value: null },
+      { id: 'enrollments', label: 'Matrículas declaradas', description: 'Registros de matrícula informados', unit: 'count', value: null },
       { id: 'completions', label: 'Conclusões registradas', description: 'Jornadas de cursos com conclusão registrada', unit: 'count', value: null },
       { id: 'employment', label: 'Contratações declaradas', description: 'Registros informados na jornada de vagas', unit: 'count', value: null },
     ],
@@ -116,7 +116,7 @@ export const products: readonly ProductDefinition[] = [
       title: 'Acesso à formação avançada',
       description: 'Distribuição das adesões por modalidade de oferta.',
       categories: [
-        { id: 'postgraduate-funded', label: 'Pós-graduação · bolsas custeadas', color: blue },
+        { id: 'postgraduate-funded', label: 'Pós-graduação · bolsas', color: blue },
         { id: 'postgraduate-discount', label: 'Pós-graduação · descontos', color: teal },
         { id: 'certification-funded', label: 'Certificações · bolsas cedidas', color: gold },
         { id: 'certification-discount', label: 'Certificações · descontos', color: slate },
