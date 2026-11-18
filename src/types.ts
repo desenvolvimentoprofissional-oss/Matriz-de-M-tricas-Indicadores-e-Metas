@@ -9,6 +9,7 @@ export interface MatrixRow {
   purpose: string;
   indicators: string;
   target: string;
+  verificationPoints: readonly string[];
 }
 
 export interface KpiDefinition {

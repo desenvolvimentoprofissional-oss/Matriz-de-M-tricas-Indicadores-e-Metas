@@ -4,17 +4,19 @@ Página executiva do CRA-SP em React e TypeScript, com o padrão visual do Work:
 
 ## Conteúdo
 
-| Produto | Matriz integral |
-| --- | ---: |
-| Componente Curricular ASG e ODS | 13 itens |
-| CRA-SP Educa | 13 itens |
-| Programa de Desenvolvimento Profissional | 14 itens |
+| Produto | Dimensões de acompanhamento | Pontos de verificação |
+| --- | ---: | ---: |
+| Componente Curricular ASG e ODS | 13 | 48 |
+| CRA-SP Educa | 13 | 34 |
+| Programa de Desenvolvimento Profissional | 14 | 48 |
 
 Cada produto apresenta quatro KPIs executivos, um gráfico de colunas e um gráfico de rosca na mesma linha em telas maiores, seguidos da matriz completa. No celular, os gráficos se empilham e a matriz mantém todas as colunas com rolagem horizontal.
 
 O topo apresenta apenas o título da página e os botões **ASG e ODS**, **CRA-SP Educa** e **PDP CRA-SP**, com largura e altura iguais. Os nomes completos permanecem disponíveis ao passar o cursor sobre cada botão e na identificação acessível do conteúdo.
 
-Cada matriz oferece o botão **Baixar Excel**, que gera um arquivo `.xlsx` com todas as linhas, oito colunas e critérios de leitura do produto selecionado. Os valores sugeridos das metas são preservados e aparecem entre parênteses, como `(60%)` e `(90) dias`. Parâmetros dos modelos, referências a cláusulas e escalas de avaliação conservam sua identificação original.
+Ao lado do título, cada matriz apresenta o total de **dimensões** e de **pontos de verificação**. Cada dimensão corresponde a uma linha; os pontos são os aspectos básicos acompanhados nessa linha, discriminados em `verificationPoints`. A contagem soma essas listas explícitas, sem interpretar pontuação ou duplicar um aspecto apenas porque também existe uma taxa que o resume. Recortes por instituição, área ou período e categorias de um mesmo desfecho não multiplicam o total.
+
+O botão **Baixar Excel** gera um arquivo `.xlsx` com a matriz de oito colunas, os critérios de leitura e uma aba **Pontos de verificação**, que identifica cada ponto e sua dimensão de origem. Os valores sugeridos das metas são preservados e aparecem entre parênteses, como `(60%)` e `(90) dias`. Parâmetros dos modelos, referências a cláusulas e escalas de avaliação conservam sua identificação original.
 
 A matriz possui colunas separadas para número, eixo (componente, na matriz ASG e ODS), dimensão, momento/etapa, o que acompanhar, por que acompanhar, indicadores e metas. O PDP conserva a sequência Cursos Livres, Trilhas de Aprendizagem, Distinção Profissional, Pós-graduação e Certificações de Mercado, incluindo as duas modalidades dos dois últimos eixos.
 

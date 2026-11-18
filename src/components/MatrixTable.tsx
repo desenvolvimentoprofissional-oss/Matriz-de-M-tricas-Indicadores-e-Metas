@@ -5,6 +5,7 @@ import { downloadMatrix } from '../lib/exportMatrix';
 
 export function MatrixTable({ product }: { product: ProductDefinition }) {
   const titleId = `matrix-title-${product.id}`;
+  const verificationCount = product.rows.reduce((total, row) => total + row.verificationPoints.length, 0);
   const [isExporting, setIsExporting] = useState(false);
   const [exportError, setExportError] = useState<string | null>(null);
 
@@ -25,7 +26,12 @@ export function MatrixTable({ product }: { product: ProductDefinition }) {
         <h3 id={titleId}>Matriz de métricas, indicadores e metas</h3>
       </div>
       <div className="matrix-actions">
-        <span className="matrix-count">{product.rows.length} itens</span>
+        <div className="matrix-totals">
+          <span className="matrix-count" title="Dimensões de acompanhamento">{product.rows.length} dimensões</span>
+          <span className="matrix-count" title="Aspectos acompanhados nas dimensões da matriz">
+            {verificationCount} pontos de verificação
+          </span>
+        </div>
         <button type="button" className="matrix-download" onClick={handleExport}
           disabled={isExporting} aria-busy={isExporting}>
           <Download size={15} strokeWidth={1.8} aria-hidden="true" />
@@ -37,7 +43,7 @@ export function MatrixTable({ product }: { product: ProductDefinition }) {
     <div className="matrix-card">
       <div className="matrix-scroll" role="region" aria-label={`Matriz integral — ${product.name}`} tabIndex={0}>
         <table>
-          <caption className="sr-only">Matriz integral de {product.name}, com {product.rows.length} itens.</caption>
+          <caption className="sr-only">Matriz integral de {product.name}, com {product.rows.length} dimensões de acompanhamento e {verificationCount} pontos de verificação.</caption>
           <colgroup><col className="col-number" /><col className="col-axis" /><col className="col-dimension" />
             <col className="col-stage" /><col className="col-monitor" /><col className="col-purpose" />
             <col className="col-indicators" /><col className="col-target" /></colgroup>

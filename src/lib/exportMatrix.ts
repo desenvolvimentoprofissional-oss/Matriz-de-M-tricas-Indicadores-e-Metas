@@ -55,6 +55,22 @@ export async function buildMatrixWorkbook(product: ProductDefinition): Promise<W
   notes.columns = [{ header: 'Critério de leitura', width: 42 }, { header: product.name, width: 120 }];
   product.notes.forEach((note, index) => notes.addRow([`Critério de leitura ${index + 1}`, note]));
   styleSheet(notes);
+
+  const verification = workbook.addWorksheet('Pontos de verificação');
+  verification.columns = [
+    { header: 'Nº da dimensão', width: 16 },
+    { header: product.id === 'asg' ? 'Componente' : 'Eixo', width: 26 },
+    { header: 'Dimensão', width: 36 },
+    { header: 'Nº do ponto', width: 14 },
+    { header: 'Ponto de verificação', width: 110 },
+  ];
+  for (const row of product.rows) {
+    row.verificationPoints.forEach((point, index) => {
+      verification.addRow([row.number, row.axis, row.dimension, index + 1, point]);
+    });
+  }
+  verification.autoFilter = `A1:E${verification.rowCount}`;
+  styleSheet(verification);
   return workbook;
 }
 

@@ -10,6 +10,11 @@ export const pdpRows: readonly MatrixRow[] = [
     purpose: "Conhecer o alcance do Programa e o interesse dos profissionais.",
     indicators: "Ofertas disponíveis; inscritos únicos; participantes que iniciaram.",
     target: "Registrar (100%) das ofertas e estabelecer a linha de base de participação em (90) dias.",
+    verificationPoints: [
+      "Ofertas disponíveis",
+      "Inscritos únicos",
+      "Início das atividades",
+    ],
   },
   {
     number: 2,
@@ -20,6 +25,11 @@ export const pdpRows: readonly MatrixRow[] = [
     purpose: "Identificar adesão efetiva e dificuldades de continuidade.",
     indicators: "Concluintes ÷ iniciantes da mesma turma ou período.",
     target: "Buscar (60%) de conclusão nas ofertas cujo prazo tenha terminado.",
+    verificationPoints: [
+      "Participação na formação",
+      "Conclusão da formação",
+      "Desistências",
+    ],
   },
   {
     number: 3,
@@ -30,6 +40,10 @@ export const pdpRows: readonly MatrixRow[] = [
     purpose: "Verificar a entrada no percurso relacionado à Distinção.",
     indicators: "Iniciantes; percentual de concluintes elegíveis dos Cursos Livres que iniciam uma Trilha.",
     target: "Buscar (15%) de ingresso em até (90) dias entre os concluintes elegíveis dos Cursos Livres que ainda não participavam das Trilhas.",
+    verificationPoints: [
+      "Ingresso nas Trilhas",
+      "Transição dos Cursos Livres para as Trilhas",
+    ],
   },
   {
     number: 4,
@@ -40,6 +54,11 @@ export const pdpRows: readonly MatrixRow[] = [
     purpose: "Identificar avanços e dificuldades no percurso para a Distinção.",
     indicators: "Iniciantes; concluintes; taxa de conclusão; percursos integralmente cumpridos.",
     target: "Buscar (70%) de conclusão das Trilhas, nos prazos das respectivas ofertas.",
+    verificationPoints: [
+      "Início e participação nas Trilhas",
+      "Conclusão das Trilhas",
+      "Requisitos do percurso cumpridos",
+    ],
   },
   {
     number: 5,
@@ -50,6 +69,10 @@ export const pdpRows: readonly MatrixRow[] = [
     purpose: "Identificar se a jornada conduz ao reconhecimento e onde ocorrem interrupções.",
     indicators: "Taxa de conversão: profissionais que obtiveram a Distinção ÷ iniciantes elegíveis da mesma coorte. Tempo mediano: dias entre início do percurso e concessão.",
     target: "Estabelecer a linha de base na primeira coorte com prazo suficiente para conclusão; acompanhar trimestralmente e definir a meta anual de conversão a partir desses resultados.",
+    verificationPoints: [
+      "Conversão do percurso em Distinção",
+      "Tempo até a concessão da Distinção",
+    ],
   },
   {
     number: 6,
@@ -60,6 +83,12 @@ export const pdpRows: readonly MatrixRow[] = [
     purpose: "Verificar se o percurso formativo se converte em Distinção.",
     indicators: "Distinções concedidas e vigentes; proporção no universo elegível; tempo de formalização.",
     target: "Formalizar (100%) das concessões devidas, buscando concluir (95%) em até (15) dias úteis após confirmação integral dos requisitos. Definir a meta anual de volume após a linha de base.",
+    verificationPoints: [
+      "Requisitos para concessão cumpridos",
+      "Distinções concedidas",
+      "Distinções vigentes",
+      "Tempo de formalização",
+    ],
   },
   {
     number: 7,
@@ -70,6 +99,11 @@ export const pdpRows: readonly MatrixRow[] = [
     purpose: "Avaliar a continuidade do desenvolvimento após a concessão.",
     indicators: "Taxa de manutenção; pendências; regularizações realizadas.",
     target: "Buscar (85%) de manutenção, ao final do ciclo aplicável, entre os profissionais acompanhados desde seu início.",
+    verificationPoints: [
+      "Requisitos de manutenção cumpridos",
+      "Pendências de manutenção",
+      "Regularizações realizadas",
+    ],
   },
   {
     number: 8,
@@ -80,6 +114,10 @@ export const pdpRows: readonly MatrixRow[] = [
     purpose: "Verificar a continuidade da aprendizagem após o reconhecimento.",
     indicators: "Profissionais com Distinção vigente que iniciam e concluem novas formações.",
     target: "Buscar participação de (70%) dos profissionais distinguidos em pelo menos (uma) nova formação no ciclo anual, observados os requisitos de manutenção.",
+    verificationPoints: [
+      "Início de novas formações",
+      "Conclusão de novas formações",
+    ],
   },
   {
     number: 9,
@@ -90,6 +128,13 @@ export const pdpRows: readonly MatrixRow[] = [
     purpose: "Conhecer os resultados associados à jornada dos profissionais distinguidos.",
     indicators: "Relatos de aplicação; evolução de competências; taxas de adimplência e permanência.",
     target: "Estabelecer linha de base em (90) dias, acompanhar a aplicação em até (seis) meses e realizar comparação institucional anual.",
+    verificationPoints: [
+      "Aplicação dos conhecimentos",
+      "Trajetória profissional",
+      "Evolução de competências",
+      "Adimplência",
+      "Permanência no Conselho",
+    ],
   },
   {
     number: 10,
@@ -100,6 +145,10 @@ export const pdpRows: readonly MatrixRow[] = [
     purpose: "Verificar se a Distinção tem significado e valor para quem a conquista.",
     indicators: "Percentual de respondentes que atribuem notas 4 ou 5, em escala de 1 a 5, à utilidade e ao valor profissional da Distinção.",
     target: "Buscar (80%) de avaliações positivas, com levantamento aos (seis) meses da concessão e acompanhamento anual, mediante participação voluntária.",
+    verificationPoints: [
+      "Utilidade atribuída à Distinção",
+      "Reconhecimento no ambiente profissional",
+    ],
   },
   {
     number: 11,
@@ -110,6 +159,14 @@ export const pdpRows: readonly MatrixRow[] = [
     purpose: "Verificar a execução da oferta e a utilização dos recursos destinados à formação.",
     indicators: "Bolsas ofertadas e utilizadas; matriculados; concluintes; taxa de conclusão; ocorrências de cobrança indevida.",
     target: "Acompanhar (100%) dos bolsistas e assegurar o registro da cobertura integral. Definir metas de vagas e conclusão por oferta aprovada.",
+    verificationPoints: [
+      "Bolsas disponibilizadas",
+      "Utilização das bolsas e matrículas",
+      "Cobertura integral da formação",
+      "Evolução acadêmica",
+      "Conclusão do curso",
+      "Cobranças indevidas",
+    ],
   },
   {
     number: 12,
@@ -120,6 +177,12 @@ export const pdpRows: readonly MatrixRow[] = [
     purpose: "Verificar se a cooperação amplia o acesso e proporciona benefício econômico comprovável.",
     indicators: "Ofertas ativas; adesões informadas; desconto efetivo; economia em relação ao preço de referência equivalente.",
     target: "Manter (100%) das ofertas divulgadas com preço de referência, desconto, preço final e condições documentados; consolidar as adesões informadas.",
+    verificationPoints: [
+      "Ofertas disponíveis",
+      "Desconto efetivo e economia gerada",
+      "Adesões informadas",
+      "Continuidade acadêmica",
+    ],
   },
   {
     number: 13,
@@ -130,6 +193,12 @@ export const pdpRows: readonly MatrixRow[] = [
     purpose: "Verificar se as bolsas são utilizadas e quais resultados produzem.",
     indicators: "Bolsas disponibilizadas e utilizadas; participantes avaliados; certificações obtidas.",
     target: "Buscar (80%) de utilização das bolsas cedidas e registrar os resultados fornecidos pelas instituições.",
+    verificationPoints: [
+      "Bolsas disponibilizadas",
+      "Bolsas utilizadas",
+      "Participação nas avaliações",
+      "Certificações obtidas",
+    ],
   },
   {
     number: 14,
@@ -140,5 +209,12 @@ export const pdpRows: readonly MatrixRow[] = [
     purpose: "Avaliar o benefício econômico e o acesso efetivo às certificações.",
     indicators: "Ofertas ativas; adesões informadas; desconto efetivo; participantes avaliados; certificações obtidas.",
     target: "Manter (100%) das ofertas com descontos, custos, cobertura e condições documentados; consolidar as adesões e os resultados informados.",
+    verificationPoints: [
+      "Ofertas disponíveis",
+      "Condições comerciais e desconto efetivo",
+      "Adesões informadas",
+      "Participação nas avaliações",
+      "Certificações obtidas",
+    ],
   },
 ];

@@ -13,6 +13,7 @@ const requiredTextFields = [
 ] as const satisfies readonly (keyof MatrixRow)[];
 
 const expectedRowCounts: Record<ProductId, number> = { asg: 13, educa: 13, pdp: 14 };
+const expectedVerificationCounts: Record<ProductId, number> = { asg: 48, educa: 34, pdp: 48 };
 const pdpAxisOrder = [
   'Cursos Livres', 'Trilhas de Aprendizagem', 'Distinção Profissional',
   'Pós-graduação', 'Certificações de Mercado',
@@ -67,6 +68,21 @@ test('os eixos do PDP aparecem em blocos consecutivos na ordem da jornada', () =
   assert.deepEqual(blocks, pdpAxisOrder);
 });
 
+test('os pontos são explícitos por dimensão e ASG 01 conserva as três verificações definidas', () => {
+  assert.deepEqual(product('asg').rows[0].verificationPoints, [
+    'Direitos de uso comprovados', 'Versão aprovada', 'Autorização vigente',
+  ]);
+  for (const entry of products) {
+    for (const row of entry.rows) {
+      assert.ok(row.verificationPoints.length > 0, `${entry.id}/${row.number}: pontos discriminados`);
+      assert.ok(row.verificationPoints.every((point) => typeof point === 'string' && point.trim()),
+        `${entry.id}/${row.number}: pontos preenchidos`);
+      assert.equal(new Set(row.verificationPoints.map(normalized)).size, row.verificationPoints.length,
+        `${entry.id}/${row.number}: sem repetir o mesmo ponto na dimensão`);
+    }
+  }
+});
+
 test('Pós-graduação e Certificações conservam suas duas modalidades distintas', () => {
   const rows = product('pdp').rows;
   const postgraduate = rows.filter((row) => row.axis === 'Pós-graduação');
@@ -119,6 +135,12 @@ test('os cartões renderizam os quatro indicadores reais como ainda não apurado
 test('a tabela integral renderiza oito colunas e todos os conteúdos de cada matriz', () => {
   for (const entry of products) {
     const markup = renderToStaticMarkup(createElement(MatrixTable, { product: entry }));
+    const totals = [...markup.matchAll(/<span\b[^>]*class="matrix-count"[^>]*>(.*?)<\/span>/gs)]
+      .map((match) => textContent(match[1]));
+    assert.deepEqual(totals, [
+      `${expectedRowCounts[entry.id]} dimensões`,
+      `${expectedVerificationCounts[entry.id]} pontos de verificação`,
+    ], `${entry.id}: totais de dimensões e pontos no cabeçalho`);
     const head = markup.match(/<thead\b[^>]*>(.*?)<\/thead>/s);
     const body = markup.match(/<tbody\b[^>]*>(.*?)<\/tbody>/s);
     assert.ok(head, `${entry.id}: cabeçalho da tabela`);

@@ -17,9 +17,11 @@ async function reopen(product: ProductDefinition) {
 }
 
 for (const product of products) {
-  test(`XLSX ${product.id}: round-trip preserva oito colunas e a matriz integral`, async () => {
+  test(`XLSX ${product.id}: round-trip preserva a matriz integral e seus pontos de verificação`, async () => {
     const workbook = await reopen(product);
-    assert.deepEqual(workbook.worksheets.map((sheet) => sheet.name), ['Matriz', 'Notas']);
+    assert.deepEqual(workbook.worksheets.map((sheet) => sheet.name), [
+      'Matriz', 'Notas', 'Pontos de verificação',
+    ]);
     const matrix = workbook.getWorksheet('Matriz');
     assert.ok(matrix);
     assert.equal(matrix.columnCount, 8);
@@ -42,6 +44,27 @@ for (const product of products) {
     assert.equal(matrix.autoFilter, `A1:H${expectedCounts[product.id] + 1}`);
     assert.equal(matrix.views[0].state, 'frozen');
     assert.equal(matrix.getCell(2, 8).alignment.wrapText, true);
+
+    const verification = workbook.getWorksheet('Pontos de verificação');
+    assert.ok(verification);
+    const expectedPoints = product.rows.flatMap((row) => row.verificationPoints.map((point, index) => [
+      row.number, row.axis, row.dimension, index + 1, point,
+    ]));
+    assert.ok(expectedPoints.length > 0, 'a matriz deve fornecer os pontos efetivamente contados');
+    assert.equal(verification.columnCount, 5);
+    assert.equal(verification.rowCount, expectedPoints.length + 1);
+    assert.deepEqual(Array.from({ length: 5 }, (_, index) => verification.getCell(1, index + 1).value), [
+      'Nº da dimensão', product.id === 'asg' ? 'Componente' : 'Eixo', 'Dimensão',
+      'Nº do ponto', 'Ponto de verificação',
+    ]);
+    expectedPoints.forEach((expected, index) => {
+      assert.deepEqual(Array.from({ length: 5 }, (_, column) =>
+        verification.getCell(index + 2, column + 1).value), expected,
+      `ponto ${index + 1}, com a dimensão de origem e o texto integral`);
+    });
+    assert.equal(verification.autoFilter, `A1:E${expectedPoints.length + 1}`);
+    assert.equal(verification.views[0].state, 'frozen');
+    assert.equal(verification.getCell(2, 5).alignment.wrapText, true);
   });
 }
 
@@ -52,20 +75,26 @@ test('textos iniciados por operadores permanecem texto literal, nunca fórmulas 
     ...source,
     rows: source.rows.map((row, index) => index === 0 ? {
       ...row, monitor: literalValues[0], purpose: literalValues[1],
-      indicators: literalValues[2], target: literalValues[3],
+      indicators: literalValues[2], target: literalValues[3], verificationPoints: literalValues,
     } : row),
     notes: [literalValues[0]],
   };
   const workbook = await reopen(product);
   const matrix = workbook.getWorksheet('Matriz');
   const notes = workbook.getWorksheet('Notas');
+  const verification = workbook.getWorksheet('Pontos de verificação');
   assert.ok(matrix);
   assert.ok(notes);
+  assert.ok(verification);
   literalValues.forEach((value, index) => {
     const cell = matrix.getCell(2, index + 5);
     assert.equal(cell.value, value);
     assert.equal(cell.type, ExcelJS.ValueType.String);
     assert.equal(cell.formula, undefined);
+    const pointCell = verification.getCell(index + 2, 5);
+    assert.equal(pointCell.value, value);
+    assert.equal(pointCell.type, ExcelJS.ValueType.String);
+    assert.equal(pointCell.formula, undefined);
   });
   assert.equal(notes.getCell(2, 2).value, literalValues[0]);
   assert.equal(notes.getCell(2, 2).type, ExcelJS.ValueType.String);

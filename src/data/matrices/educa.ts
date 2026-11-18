@@ -10,6 +10,11 @@ export const educaRows: readonly MatrixRow[] = [
     purpose: "Conhecer a contribuição efetiva dos parceiros.",
     indicators: "Instituições participantes; instituições com cursos disponíveis; cursos por instituição.",
     target: "Manter (100%) das instituições publicadas identificadas e vinculadas às respectivas ofertas; revisar o portfólio trimestralmente.",
+    verificationPoints: [
+      "Instituições participantes identificadas",
+      "Vínculo das instituições com cursos disponíveis",
+      "Atualização das ofertas institucionais",
+    ],
   },
   {
     number: 2,
@@ -20,6 +25,11 @@ export const educaRows: readonly MatrixRow[] = [
     purpose: "Permitir escolhas informadas e acesso às instituições responsáveis.",
     indicators: "Cursos disponíveis; distribuição por instituição, área, formato e carga horária; percentual de registros completos e links válidos.",
     target: "Manter (100%) das ofertas com informações essenciais completas e conferir mensalmente os links de acesso.",
+    verificationPoints: [
+      "Cursos disponíveis",
+      "Informações essenciais completas",
+      "Links de acesso funcionais",
+    ],
   },
   {
     number: 3,
@@ -30,6 +40,10 @@ export const educaRows: readonly MatrixRow[] = [
     purpose: "Identificar a procura e orientar a composição do catálogo.",
     indicators: "Usuários distintos interessados; pré-matrículas registradas; procura por curso, área e instituição.",
     target: "Estabelecer linha de base em (90) dias e realizar análise mensal da procura.",
+    verificationPoints: [
+      "Usuários interessados",
+      "Pré-matrículas registradas",
+    ],
   },
   {
     number: 4,
@@ -40,6 +54,9 @@ export const educaRows: readonly MatrixRow[] = [
     purpose: "Distinguir interesse de matrícula declarada.",
     indicators: "Matrículas declaradas; percentual de pré-matrículas que evoluem para matrícula declarada na mesma coorte.",
     target: "Buscar (50%) de conversão em até (30) dias após o primeiro registro de interesse.",
+    verificationPoints: [
+      "Matrículas declaradas",
+    ],
   },
   {
     number: 5,
@@ -50,6 +67,11 @@ export const educaRows: readonly MatrixRow[] = [
     purpose: "Identificar avanços, interrupções e necessidades de acompanhamento.",
     indicators: "Distribuição das situações da jornada; conclusões declaradas; desistências antes e depois da matrícula declarada.",
     target: "Buscar (60%) de conclusão declarada nas coortes com prazo de formação encerrado, segmentando os cursos por duração.",
+    verificationPoints: [
+      "Participação informada",
+      "Conclusões declaradas",
+      "Desistências informadas",
+    ],
   },
   {
     number: 6,
@@ -60,6 +82,13 @@ export const educaRows: readonly MatrixRow[] = [
     purpose: "Distinguir conclusão informada de conclusão documentalmente validada.",
     indicators: "Certificados enviados; certificados em análise; decisões registradas; conclusões validadas, quando houver validação registrada.",
     target: "Manter (100%) dos envios com situação identificada; definir responsável, critérios e prazo de análise antes de estabelecer meta de conclusão comprovada.",
+    verificationPoints: [
+      "Certificados apresentados",
+      "Pendências identificadas",
+      "Certificados em análise",
+      "Decisões registradas",
+      "Conclusões validadas",
+    ],
   },
   {
     number: 7,
@@ -70,6 +99,12 @@ export const educaRows: readonly MatrixRow[] = [
     purpose: "Identificar a experiência dos participantes que apresentam certificado e orientar melhorias.",
     indicators: "Média de cada item; percentual de notas 4 ou 5; quantidade de avaliadores por curso e instituição.",
     target: "Buscar (80%) de notas 4 ou 5 em cada item, informando sempre a quantidade e o perfil das respostas.",
+    verificationPoints: [
+      "Avaliação do curso",
+      "Avaliação da plataforma",
+      "Avaliação do material",
+      "Quantidade de avaliadores",
+    ],
   },
   {
     number: 8,
@@ -80,6 +115,10 @@ export const educaRows: readonly MatrixRow[] = [
     purpose: "Conhecer a diversidade e a contribuição dos parceiros.",
     indicators: "Instituições fornecedoras; empresas anunciantes; anúncios por instituição e empresa.",
     target: "Manter (100%) dos anúncios vinculados à instituição ou empresa responsável e revisar trimestralmente a composição da rede.",
+    verificationPoints: [
+      "Instituições fornecedoras de oportunidades",
+      "Empresas identificadas nos anúncios",
+    ],
   },
   {
     number: 9,
@@ -90,6 +129,13 @@ export const educaRows: readonly MatrixRow[] = [
     purpose: "Reduzir informações incompletas e encaminhamentos para oportunidades indisponíveis.",
     indicators: "Anúncios distintos; distribuição por tipo e localidade; percentual de registros completos e links válidos.",
     target: "Manter (100%) dos anúncios com identificação, requisitos e link; verificar mensalmente sua disponibilidade com as fontes responsáveis.",
+    verificationPoints: [
+      "Identificação dos anúncios",
+      "Requisitos das oportunidades",
+      "Localidade das oportunidades",
+      "Condições das oportunidades",
+      "Links de candidatura",
+    ],
   },
   {
     number: 10,
@@ -100,6 +146,10 @@ export const educaRows: readonly MatrixRow[] = [
     purpose: "Medir a procura sem confundir pessoas com quantidade de interesses.",
     indicators: "Usuários distintos interessados; registros de interesse por usuário e vaga; distribuição por tipo, empresa e localidade.",
     target: "Estabelecer linha de base em (90) dias e acompanhar mensalmente a procura.",
+    verificationPoints: [
+      "Usuários interessados",
+      "Interesses registrados por usuário e vaga",
+    ],
   },
   {
     number: 11,
@@ -110,6 +160,9 @@ export const educaRows: readonly MatrixRow[] = [
     purpose: "Distinguir interesse no Educa de candidatura declarada.",
     indicators: "Candidaturas declaradas; percentual de interesses que evoluem para participação declarada na mesma coorte.",
     target: "Buscar (50%) de participação declarada em até (30) dias após o primeiro interesse registrado.",
+    verificationPoints: [
+      "Candidaturas declaradas",
+    ],
   },
   {
     number: 12,
@@ -120,6 +173,9 @@ export const educaRows: readonly MatrixRow[] = [
     purpose: "Conhecer os desfechos sem classificar silêncio como reprovação.",
     indicators: "Percentual de processos com resultado informado; distribuição dos desfechos; casos sem informação.",
     target: "Buscar (60%) de desfechos informados em até (90) dias, mediante incentivo ao retorno dos participantes.",
+    verificationPoints: [
+      "Desfecho informado ou ausência de informação",
+    ],
   },
   {
     number: 13,
@@ -130,5 +186,9 @@ export const educaRows: readonly MatrixRow[] = [
     purpose: "Acompanhar resultados profissionais associados à utilização do Educa.",
     indicators: "Contratações declaradas; usuários distintos que declararam contratação; proporção entre participantes da mesma coorte.",
     target: "Estabelecer linha de base antes de fixar uma taxa de contratação e acompanhar sua evolução trimestralmente. Identificar a origem da informação em (100%) dos relatórios.",
+    verificationPoints: [
+      "Contratações declaradas",
+      "Usuários que declararam contratação",
+    ],
   },
 ];

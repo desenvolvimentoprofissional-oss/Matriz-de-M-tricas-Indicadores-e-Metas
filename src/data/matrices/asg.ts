@@ -10,6 +10,11 @@ export const asgRows: readonly MatrixRow[] = [
     purpose: 'Assegurar a regularidade da disponibilização dos conteúdos.',
     indicators: 'Percentual de materiais com direitos comprovados, versão aprovada e autorização vigente.',
     target: '(100%) dos materiais liberados com autorizações válidas, conforme as condições dos modelos.',
+    verificationPoints: [
+      'Direitos de uso comprovados',
+      'Versão aprovada',
+      'Autorização vigente',
+    ],
   },
   {
     number: 2,
@@ -20,6 +25,13 @@ export const asgRows: readonly MatrixRow[] = [
     purpose: 'Conhecer a procura e organizar o atendimento.',
     indicators: 'Manifestações por período; instituições e campus identificados após conferência; distribuição por semestre pretendido.',
     target: 'Estabelecer linha de base em (90) dias e registrar o encaminhamento de (100%) das manifestações.',
+    verificationPoints: [
+      'Manifestações de interesse recebidas',
+      'Instituições identificadas',
+      'Campus identificados',
+      'Curso principal informado',
+      'Semestre de implementação pretendido',
+    ],
   },
   {
     number: 3,
@@ -30,6 +42,13 @@ export const asgRows: readonly MatrixRow[] = [
     purpose: 'Distinguir interesse de adesão formal.',
     indicators: 'IES aderentes; ACTs formalizados; campus e cursos abrangidos; conversão de interesse em adesão.',
     target: '(100%) das liberações precedidas de ACT próprio com a IES, conforme o modelo. Definir a meta de adesões após a linha de base.',
+    verificationPoints: [
+      'ACTs específicos formalizados',
+      'IES aderentes',
+      'Campus abrangidos',
+      'Cursos abrangidos',
+      'Responsáveis identificados',
+    ],
   },
   {
     number: 4,
@@ -40,6 +59,14 @@ export const asgRows: readonly MatrixRow[] = [
     purpose: 'Conhecer o escopo efetivamente adotado por cada instituição.',
     indicators: 'Distribuição das adoções por formato; módulos selecionados; cursos e períodos abrangidos.',
     target: 'Manter (100%) das aplicações com escopo, AVA, responsáveis e período identificados. A adoção integral corresponde a 24 horas pedagógicas.',
+    verificationPoints: [
+      'Abrangência da adoção integral, modular ou como apoio',
+      'Módulos selecionados',
+      'Forma de aplicação',
+      'AVA de aplicação',
+      'Cursos abrangidos',
+      'Período de aplicação',
+    ],
   },
   {
     number: 5,
@@ -50,6 +77,9 @@ export const asgRows: readonly MatrixRow[] = [
     purpose: 'Distinguir formalização de implantação efetiva.',
     indicators: 'IES com implantação declarada; taxa de implantação entre as adesões previstas para o mesmo período.',
     target: 'Buscar (80%) de implantação no semestre planejado, entre as IES formalmente aderentes com condições de iniciar a aplicação.',
+    verificationPoints: [
+      'Implantação declarada no período planejado',
+    ],
   },
   {
     number: 6,
@@ -60,6 +90,10 @@ export const asgRows: readonly MatrixRow[] = [
     purpose: 'Dimensionar o alcance efetivo da aplicação.',
     indicators: 'Participantes; impactados, quando utilizados pela IES; distribuição por instituição, campus e curso.',
     target: 'Obter dados de (100%) das IES com aplicação iniciada, com período, fonte e critério de contagem identificados.',
+    verificationPoints: [
+      'Quantitativo de participantes',
+      'Quantitativo de impactados, quando informado',
+    ],
   },
   {
     number: 7,
@@ -70,6 +104,9 @@ export const asgRows: readonly MatrixRow[] = [
     purpose: 'Verificar a continuidade e o cumprimento da formação proposta.',
     indicators: 'Concluintes; taxa de conclusão: concluintes ÷ participantes do mesmo grupo, escopo e período.',
     target: 'Buscar (70%) de conclusão nas coortes encerradas, quando houver critérios comparáveis de participação e conclusão.',
+    verificationPoints: [
+      'Concluintes do escopo adotado',
+    ],
   },
   {
     number: 8,
@@ -80,6 +117,10 @@ export const asgRows: readonly MatrixRow[] = [
     purpose: 'Avaliar a contribuição formativa do componente.',
     indicators: 'Resultados por objetivo ou módulo, segundo os instrumentos e critérios adotados pela IES.',
     target: 'Nas aplicações com avaliação, registrar os resultados e estabelecer metas de aprendizagem após o primeiro ciclo, preservando os critérios acadêmicos da IES.',
+    verificationPoints: [
+      'Atendimento aos objetivos de aprendizagem',
+      'Aplicação dos conhecimentos em atividades e casos',
+    ],
   },
   {
     number: 9,
@@ -90,6 +131,12 @@ export const asgRows: readonly MatrixRow[] = [
     purpose: 'Apoiar a implantação e identificar necessidades de melhoria.',
     indicators: 'Solicitações de apoio; assuntos recorrentes; tempo de resposta; demandas resolvidas.',
     target: 'Registrar (100%) das solicitações e buscar resposta inicial a (95%) em até (cinco) dias úteis.',
+    verificationPoints: [
+      'Solicitações de apoio',
+      'Dificuldades e assuntos recorrentes',
+      'Tempo de resposta',
+      'Demandas resolvidas',
+    ],
   },
   {
     number: 10,
@@ -100,6 +147,13 @@ export const asgRows: readonly MatrixRow[] = [
     purpose: 'Orientar melhorias pedagógicas e de atendimento.',
     indicators: 'Percentual de avaliações positivas; quantidade de respondentes; sugestões por módulo e formato.',
     target: 'Buscar (80%) de avaliações positivas, correspondentes a notas 4 ou 5 em escala de 1 a 5, em levantamentos voluntários.',
+    verificationPoints: [
+      'Percepção sobre o conteúdo',
+      'Percepção sobre os recursos',
+      'Utilidade da formação',
+      'Quantidade de respondentes',
+      'Sugestões de melhoria',
+    ],
   },
   {
     number: 11,
@@ -110,6 +164,14 @@ export const asgRows: readonly MatrixRow[] = [
     purpose: 'Produzir resultados interpretáveis e reduzir duplicidades.',
     indicators: 'Registros completos; informações atualizadas; inconsistências identificadas e esclarecidas.',
     target: 'Manter (100%) dos registros consolidados com fonte, data, período e critérios identificados. Sugestão de consolidação semestral.',
+    verificationPoints: [
+      'Fonte da informação',
+      'Atualização das informações e respectiva data',
+      'Período de referência',
+      'Critério de contagem',
+      'Limitações das declarações',
+      'Inconsistências identificadas e esclarecidas',
+    ],
   },
   {
     number: 12,
@@ -120,6 +182,12 @@ export const asgRows: readonly MatrixRow[] = [
     purpose: 'Acompanhar a permanência das instituições e a continuidade da aplicação.',
     indicators: 'Licenças elegíveis à renovação; renovações formalizadas; taxa de renovação; motivos de não continuidade.',
     target: 'Buscar (80%) de renovação entre as licenças elegíveis e (100%) das renovações formalizadas antes do vencimento, respeitadas as autorizações.',
+    verificationPoints: [
+      'Interesse em continuar',
+      'Elegibilidade à renovação',
+      'Renovações formalizadas no prazo',
+      'Motivos de não continuidade',
+    ],
   },
   {
     number: 13,
@@ -130,5 +198,11 @@ export const asgRows: readonly MatrixRow[] = [
     purpose: 'Evitar utilização fora do período ou das condições autorizadas.',
     indicators: 'Licenças encerradas; acessos cessados; comprovações de retirada recebidas no prazo.',
     target: 'Observar a cessação do uso e a comprovação da retirada em até dez dias úteis, conforme a cláusula 5.1, “h”, do modelo.',
+    verificationPoints: [
+      'Licenças encerradas',
+      'Acessos cessados',
+      'Materiais retirados',
+      'Comprovação da retirada no prazo',
+    ],
   },
 ];
