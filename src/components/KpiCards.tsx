@@ -20,7 +20,7 @@ function KpiCard({ kpi }: { kpi: KpiDefinition }) {
   return <article className="kpi-card" aria-label={kpi.label}>
     <div className="kpi-heading">
       <h3>{kpi.label}</h3>
-      <span className="kpi-icon"><Icon size={17} strokeWidth={1.6} aria-hidden="true" /></span>
+      <span className="kpi-icon"><Icon size={24} strokeWidth={1.8} aria-hidden="true" /></span>
     </div>
     <p className="kpi-value" aria-label={kpi.value === null ? 'Valor ainda não apurado' : undefined}>
       {formatMetric(kpi.value, kpi.unit)}
