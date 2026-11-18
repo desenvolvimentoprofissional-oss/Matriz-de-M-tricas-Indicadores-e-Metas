@@ -71,8 +71,6 @@ h1 { color: #1e293b; font-size: 20px; font-weight: 700; letter-spacing: -.6px; l
 .matrix-heading .section-title h3 { font-size: 14px; }
 .matrix-count { padding: 5px 9px; color: #64748b; border: 1px solid #e2e5ec; border-radius: 6px; background: #fff; font-size: 10px; font-weight: 600; white-space: nowrap; }
 .matrix-card { border: 1px solid #e2e5ec; border-radius: 12px; background: #fff; overflow: hidden; }
-.matrix-reference-note { display: flex; align-items: center; gap: 8px; padding: 13px 18px; border-bottom: 1px solid #e2e5ec; color: #64748b; font-size: 11px; line-height: 1.6; }
-.reference-dot { width: 5px; height: 5px; border-radius: 50%; background: #8e9cb1; flex-shrink: 0; }
 .matrix-scroll { width: 100%; overflow-x: auto; scrollbar-width: thin; scrollbar-color: #c9d3e1 #f8fafc; }
 .matrix-scroll:focus-visible { outline-offset: -3px; }
 table { width: 100%; min-width: 1400px; border-collapse: collapse; table-layout: fixed; text-align: left; font-size: 12px; line-height: 1.8; }
@@ -127,8 +125,6 @@ tbody tr:hover { background: #fbfcfe; }
   .donut-plot { width: 175px; max-width: 52%; }
   .matrix-heading { align-items: flex-start; }
   .matrix-heading .section-title h3 { font-size: 13px; }
-  .matrix-reference-note { align-items: flex-start; }
-  .reference-dot { margin-top: 5px; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }

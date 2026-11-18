@@ -11,17 +11,13 @@ export function MatrixTable({ product }: { product: ProductDefinition }) {
       <span className="matrix-count">{product.rows.length} itens</span>
     </header>
     <div className="matrix-card">
-      <div className="matrix-reference-note">
-        <span className="reference-dot" aria-hidden="true" />
-        Referências de planejamento · metas e parâmetros não representam resultados de execução.
-      </div>
       <div className="matrix-scroll" role="region" aria-label={`Matriz integral — ${product.name}`} tabIndex={0}>
         <table>
           <caption className="sr-only">Matriz integral de {product.name}, com {product.rows.length} itens.</caption>
           <colgroup><col className="col-number" /><col className="col-axis" /><col className="col-dimension" />
             <col className="col-stage" /><col className="col-monitor" /><col className="col-purpose" />
             <col className="col-indicators" /><col className="col-target" /></colgroup>
-          <thead><tr><th scope="col">Nº</th><th scope="col">Eixo</th><th scope="col">Dimensão</th>
+          <thead><tr><th scope="col">Nº</th><th scope="col">{product.id === 'asg' ? 'Componente' : 'Eixo'}</th><th scope="col">Dimensão</th>
             <th scope="col">Momento / etapa</th><th scope="col">O que acompanhar</th>
             <th scope="col">Por que acompanhar</th><th scope="col">Indicadores</th>
             <th scope="col">{product.targetHeading}</th></tr></thead>

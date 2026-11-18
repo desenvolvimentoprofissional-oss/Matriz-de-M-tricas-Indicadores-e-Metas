@@ -14,7 +14,7 @@ Cada produto apresenta quatro KPIs executivos, um gráfico de colunas e um gráf
 
 O topo apresenta apenas o título da página e os botões **ASG e ODS**, **CRA-SP Educa** e **PDP CRA-SP**, com largura e altura iguais. Os nomes completos permanecem disponíveis ao passar o cursor sobre cada botão e na identificação acessível do conteúdo.
 
-A matriz possui colunas separadas para número, eixo, dimensão, momento/etapa, o que acompanhar, por que acompanhar, indicadores e metas. O PDP conserva a sequência Cursos Livres, Trilhas de Aprendizagem, Distinção Profissional, Pós-graduação e Certificações de Mercado, incluindo as duas modalidades dos dois últimos eixos.
+A matriz possui colunas separadas para número, eixo (componente, na matriz ASG e ODS), dimensão, momento/etapa, o que acompanhar, por que acompanhar, indicadores e metas. O PDP conserva a sequência Cursos Livres, Trilhas de Aprendizagem, Distinção Profissional, Pós-graduação e Certificações de Mercado, incluindo as duas modalidades dos dois últimos eixos.
 
 ## Dados e referências
 

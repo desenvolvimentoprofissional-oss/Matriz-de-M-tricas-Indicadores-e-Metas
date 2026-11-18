@@ -125,7 +125,7 @@ test('a tabela integral renderiza oito colunas e todos os conteúdos de cada mat
     assert.ok(body, `${entry.id}: corpo da tabela`);
     const headings = [...head[1].matchAll(/<th\b[^>]*>(.*?)<\/th>/gs)]
       .map((match) => textContent(match[1]));
-    assert.deepEqual(headings, ['Nº', 'Eixo', 'Dimensão', 'Momento / etapa',
+    assert.deepEqual(headings, ['Nº', entry.id === 'asg' ? 'Componente' : 'Eixo', 'Dimensão', 'Momento / etapa',
       'O que acompanhar', 'Por que acompanhar', 'Indicadores', entry.targetHeading]);
     const renderedRows = [...body[1].matchAll(/<tr\b[^>]*>(.*?)<\/tr>/gs)];
     assert.equal(renderedRows.length, expectedRowCounts[entry.id]);
