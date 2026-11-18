@@ -1,15 +1,39 @@
-import { ListChecks } from 'lucide-react';
+import { useState } from 'react';
+import { Download, ListChecks } from 'lucide-react';
 import type { ProductDefinition } from '../types';
+import { downloadMatrix } from '../lib/exportMatrix';
 
 export function MatrixTable({ product }: { product: ProductDefinition }) {
   const titleId = `matrix-title-${product.id}`;
+  const [isExporting, setIsExporting] = useState(false);
+  const [exportError, setExportError] = useState<string | null>(null);
+
+  async function handleExport() {
+    setIsExporting(true);
+    setExportError(null);
+    try {
+      await downloadMatrix(product);
+    } catch {
+      setExportError('Não foi possível gerar o Excel. Tente novamente.');
+    } finally {
+      setIsExporting(false);
+    }
+  }
   return <section className="matrix-section" aria-labelledby={titleId}>
     <header className="matrix-heading">
       <div className="section-title"><ListChecks size={18} strokeWidth={1.6} aria-hidden="true" />
         <h3 id={titleId}>Matriz de métricas, indicadores e metas</h3>
       </div>
-      <span className="matrix-count">{product.rows.length} itens</span>
+      <div className="matrix-actions">
+        <span className="matrix-count">{product.rows.length} itens</span>
+        <button type="button" className="matrix-download" onClick={handleExport}
+          disabled={isExporting} aria-busy={isExporting}>
+          <Download size={15} strokeWidth={1.8} aria-hidden="true" />
+          <span aria-live="polite">{isExporting ? 'Gerando Excel…' : 'Baixar Excel'}</span>
+        </button>
+      </div>
     </header>
+    {exportError && <p role="alert" className="matrix-export-error">{exportError}</p>}
     <div className="matrix-card">
       <div className="matrix-scroll" role="region" aria-label={`Matriz integral — ${product.name}`} tabIndex={0}>
         <table>

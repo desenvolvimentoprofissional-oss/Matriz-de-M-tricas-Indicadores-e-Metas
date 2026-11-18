@@ -9,7 +9,7 @@ export const asgRows: readonly MatrixRow[] = [
     monitor: 'ACTs dos parceiros, termos individuais, materiais e versões autorizadas.',
     purpose: 'Assegurar a regularidade da disponibilização dos conteúdos.',
     indicators: 'Percentual de materiais com direitos comprovados, versão aprovada e autorização vigente.',
-    target: '100% dos materiais liberados com autorizações válidas, conforme as condições dos modelos.',
+    target: '(100%) dos materiais liberados com autorizações válidas, conforme as condições dos modelos.',
   },
   {
     number: 2,
@@ -19,7 +19,7 @@ export const asgRows: readonly MatrixRow[] = [
     monitor: 'Contatos recebidos, instituições e campus mencionados, curso principal e previsão de implementação.',
     purpose: 'Conhecer a procura e organizar o atendimento.',
     indicators: 'Manifestações por período; instituições e campus identificados após conferência; distribuição por semestre pretendido.',
-    target: 'Estabelecer linha de base em 90 dias e registrar o encaminhamento de 100% das manifestações.',
+    target: 'Estabelecer linha de base em (90) dias e registrar o encaminhamento de (100%) das manifestações.',
   },
   {
     number: 3,
@@ -29,7 +29,7 @@ export const asgRows: readonly MatrixRow[] = [
     monitor: 'ACTs específicos celebrados, instituições, campus, cursos e responsáveis.',
     purpose: 'Distinguir interesse de adesão formal.',
     indicators: 'IES aderentes; ACTs formalizados; campus e cursos abrangidos; conversão de interesse em adesão.',
-    target: '100% das liberações precedidas de ACT próprio com a IES, conforme o modelo. Definir a meta de adesões após a linha de base.',
+    target: '(100%) das liberações precedidas de ACT próprio com a IES, conforme o modelo. Definir a meta de adesões após a linha de base.',
   },
   {
     number: 4,
@@ -39,7 +39,7 @@ export const asgRows: readonly MatrixRow[] = [
     monitor: 'Adoção integral, módulos selecionados ou uso como apoio docente; forma de aplicação, AVA e período.',
     purpose: 'Conhecer o escopo efetivamente adotado por cada instituição.',
     indicators: 'Distribuição das adoções por formato; módulos selecionados; cursos e períodos abrangidos.',
-    target: 'Manter 100% das aplicações com escopo, AVA, responsáveis e período identificados. A adoção integral corresponde a 24 horas pedagógicas.',
+    target: 'Manter (100%) das aplicações com escopo, AVA, responsáveis e período identificados. A adoção integral corresponde a 24 horas pedagógicas.',
   },
   {
     number: 5,
@@ -49,7 +49,7 @@ export const asgRows: readonly MatrixRow[] = [
     monitor: 'Instituições que efetivamente iniciaram a utilização no período planejado.',
     purpose: 'Distinguir formalização de implantação efetiva.',
     indicators: 'IES com implantação declarada; taxa de implantação entre as adesões previstas para o mesmo período.',
-    target: 'Buscar 80% de implantação no semestre planejado, entre as IES formalmente aderentes com condições de iniciar a aplicação.',
+    target: 'Buscar (80%) de implantação no semestre planejado, entre as IES formalmente aderentes com condições de iniciar a aplicação.',
   },
   {
     number: 6,
@@ -59,7 +59,7 @@ export const asgRows: readonly MatrixRow[] = [
     monitor: 'Quantitativos agregados informados pelas IES, por campus, curso, escopo e período.',
     purpose: 'Dimensionar o alcance efetivo da aplicação.',
     indicators: 'Participantes; impactados, quando utilizados pela IES; distribuição por instituição, campus e curso.',
-    target: 'Obter dados de 100% das IES com aplicação iniciada, com período, fonte e critério de contagem identificados.',
+    target: 'Obter dados de (100%) das IES com aplicação iniciada, com período, fonte e critério de contagem identificados.',
   },
   {
     number: 7,
@@ -69,7 +69,7 @@ export const asgRows: readonly MatrixRow[] = [
     monitor: 'Estudantes que concluíram o escopo adotado pela instituição.',
     purpose: 'Verificar a continuidade e o cumprimento da formação proposta.',
     indicators: 'Concluintes; taxa de conclusão: concluintes ÷ participantes do mesmo grupo, escopo e período.',
-    target: 'Buscar 70% de conclusão nas coortes encerradas, quando houver critérios comparáveis de participação e conclusão.',
+    target: 'Buscar (70%) de conclusão nas coortes encerradas, quando houver critérios comparáveis de participação e conclusão.',
   },
   {
     number: 8,
@@ -89,7 +89,7 @@ export const asgRows: readonly MatrixRow[] = [
     monitor: 'Orientações solicitadas, dificuldades de aplicação e atendimento aos docentes.',
     purpose: 'Apoiar a implantação e identificar necessidades de melhoria.',
     indicators: 'Solicitações de apoio; assuntos recorrentes; tempo de resposta; demandas resolvidas.',
-    target: 'Registrar 100% das solicitações e buscar resposta inicial a 95% em até cinco dias úteis.',
+    target: 'Registrar (100%) das solicitações e buscar resposta inicial a (95%) em até (cinco) dias úteis.',
   },
   {
     number: 10,
@@ -99,7 +99,7 @@ export const asgRows: readonly MatrixRow[] = [
     monitor: 'Percepção de docentes e participantes sobre conteúdo, recursos e utilidade da formação.',
     purpose: 'Orientar melhorias pedagógicas e de atendimento.',
     indicators: 'Percentual de avaliações positivas; quantidade de respondentes; sugestões por módulo e formato.',
-    target: 'Buscar 80% de avaliações positivas, correspondentes a notas 4 ou 5 em escala de 1 a 5, em levantamentos voluntários.',
+    target: 'Buscar (80%) de avaliações positivas, correspondentes a notas 4 ou 5 em escala de 1 a 5, em levantamentos voluntários.',
   },
   {
     number: 11,
@@ -109,7 +109,7 @@ export const asgRows: readonly MatrixRow[] = [
     monitor: 'Fonte, data, período, critérios de contagem e limitações das declarações das IES.',
     purpose: 'Produzir resultados interpretáveis e reduzir duplicidades.',
     indicators: 'Registros completos; informações atualizadas; inconsistências identificadas e esclarecidas.',
-    target: 'Manter 100% dos registros consolidados com fonte, data, período e critérios identificados. Sugestão de consolidação semestral.',
+    target: 'Manter (100%) dos registros consolidados com fonte, data, período e critérios identificados. Sugestão de consolidação semestral.',
   },
   {
     number: 12,
@@ -119,7 +119,7 @@ export const asgRows: readonly MatrixRow[] = [
     monitor: 'Interesse em continuar, condições de renovação e formalização dentro dos prazos autorizados.',
     purpose: 'Acompanhar a permanência das instituições e a continuidade da aplicação.',
     indicators: 'Licenças elegíveis à renovação; renovações formalizadas; taxa de renovação; motivos de não continuidade.',
-    target: 'Buscar 80% de renovação entre as licenças elegíveis e 100% das renovações formalizadas antes do vencimento, respeitadas as autorizações.',
+    target: 'Buscar (80%) de renovação entre as licenças elegíveis e (100%) das renovações formalizadas antes do vencimento, respeitadas as autorizações.',
   },
   {
     number: 13,

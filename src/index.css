@@ -73,6 +73,11 @@ h1 { color: #1e293b; font-size: 20px; font-weight: 700; letter-spacing: -.6px; l
 .chart-footnote { color: #64748b; font-size: 11px; text-align: center; line-height: 1.6; }
 .matrix-heading { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 14px; }
 .matrix-heading .section-title h3 { font-size: 14px; }
+.matrix-actions { display: flex; align-items: center; flex-shrink: 0; gap: 10px; }
+.matrix-download { display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-width: 132px; padding: 7px 10px; border: 1px solid #e2e5ec; border-radius: 6px; background: #fff; color: #172554; font-size: 12px; font-weight: 500; line-height: 1.5; cursor: pointer; }
+.matrix-download:hover { background: #f8fafc; }
+.matrix-download:disabled { opacity: .65; cursor: wait; }
+.matrix-export-error { margin: 0 0 12px; color: #b42318; font-size: 12px; line-height: 1.6; }
 .matrix-count { padding: 5px 9px; color: #64748b; border: 1px solid #e2e5ec; border-radius: 6px; background: #fff; font-size: 10px; font-weight: 600; white-space: nowrap; }
 .matrix-card { border: 1px solid #e2e5ec; border-radius: 12px; background: #fff; overflow: hidden; }
 .matrix-scroll { width: 100%; overflow-x: auto; scrollbar-width: thin; scrollbar-color: #c9d3e1 #f8fafc; }
@@ -128,7 +133,8 @@ tbody tr:hover { background: #fbfcfe; }
   .distribution-content { flex-direction: row; gap: 14px; }
   .distribution-content > .chart-legend { flex-direction: column; justify-content: flex-start; }
   .donut-plot { width: 175px; max-width: 52%; }
-  .matrix-heading { align-items: flex-start; }
+  .matrix-heading { align-items: flex-start; flex-direction: column; gap: 12px; }
+  .matrix-actions { width: 100%; justify-content: space-between; }
   .matrix-heading .section-title h3 { font-size: 13px; }
 }
 @media (prefers-reduced-motion: reduce) {

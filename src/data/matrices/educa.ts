@@ -9,7 +9,7 @@ export const educaRows: readonly MatrixRow[] = [
     monitor: "Instituições vinculadas aos cursos, identificação e atualização das ofertas.",
     purpose: "Conhecer a contribuição efetiva dos parceiros.",
     indicators: "Instituições participantes; instituições com cursos disponíveis; cursos por instituição.",
-    target: "Manter 100% das instituições publicadas identificadas e vinculadas às respectivas ofertas; revisar o portfólio trimestralmente.",
+    target: "Manter (100%) das instituições publicadas identificadas e vinculadas às respectivas ofertas; revisar o portfólio trimestralmente.",
   },
   {
     number: 2,
@@ -19,7 +19,7 @@ export const educaRows: readonly MatrixRow[] = [
     monitor: "Cursos publicados, informações essenciais e funcionamento dos links.",
     purpose: "Permitir escolhas informadas e acesso às instituições responsáveis.",
     indicators: "Cursos disponíveis; distribuição por instituição, área, formato e carga horária; percentual de registros completos e links válidos.",
-    target: "Manter 100% das ofertas com informações essenciais completas e conferir mensalmente os links de acesso.",
+    target: "Manter (100%) das ofertas com informações essenciais completas e conferir mensalmente os links de acesso.",
   },
   {
     number: 3,
@@ -29,7 +29,7 @@ export const educaRows: readonly MatrixRow[] = [
     monitor: "Usuários interessados e cursos adicionados à jornada.",
     purpose: "Identificar a procura e orientar a composição do catálogo.",
     indicators: "Usuários distintos interessados; pré-matrículas registradas; procura por curso, área e instituição.",
-    target: "Estabelecer linha de base em 90 dias e realizar análise mensal da procura.",
+    target: "Estabelecer linha de base em (90) dias e realizar análise mensal da procura.",
   },
   {
     number: 4,
@@ -39,7 +39,7 @@ export const educaRows: readonly MatrixRow[] = [
     monitor: "Retorno do usuário informando que realizou a matrícula externa.",
     purpose: "Distinguir interesse de matrícula declarada.",
     indicators: "Matrículas declaradas; percentual de pré-matrículas que evoluem para matrícula declarada na mesma coorte.",
-    target: "Buscar 50% de conversão em até 30 dias após o primeiro registro de interesse.",
+    target: "Buscar (50%) de conversão em até (30) dias após o primeiro registro de interesse.",
   },
   {
     number: 5,
@@ -49,7 +49,7 @@ export const educaRows: readonly MatrixRow[] = [
     monitor: "Situações informadas de participação, conclusão e desistência.",
     purpose: "Identificar avanços, interrupções e necessidades de acompanhamento.",
     indicators: "Distribuição das situações da jornada; conclusões declaradas; desistências antes e depois da matrícula declarada.",
-    target: "Buscar 60% de conclusão declarada nas coortes com prazo de formação encerrado, segmentando os cursos por duração.",
+    target: "Buscar (60%) de conclusão declarada nas coortes com prazo de formação encerrado, segmentando os cursos por duração.",
   },
   {
     number: 6,
@@ -59,7 +59,7 @@ export const educaRows: readonly MatrixRow[] = [
     monitor: "Certificados apresentados, pendências e resultados registrados da análise.",
     purpose: "Distinguir conclusão informada de conclusão documentalmente validada.",
     indicators: "Certificados enviados; certificados em análise; decisões registradas; conclusões validadas, quando houver validação registrada.",
-    target: "Manter 100% dos envios com situação identificada; definir responsável, critérios e prazo de análise antes de estabelecer meta de conclusão comprovada.",
+    target: "Manter (100%) dos envios com situação identificada; definir responsável, critérios e prazo de análise antes de estabelecer meta de conclusão comprovada.",
   },
   {
     number: 7,
@@ -69,7 +69,7 @@ export const educaRows: readonly MatrixRow[] = [
     monitor: "Notas sobre curso, plataforma e material.",
     purpose: "Identificar a experiência dos participantes que apresentam certificado e orientar melhorias.",
     indicators: "Média de cada item; percentual de notas 4 ou 5; quantidade de avaliadores por curso e instituição.",
-    target: "Buscar 80% de notas 4 ou 5 em cada item, informando sempre a quantidade e o perfil das respostas.",
+    target: "Buscar (80%) de notas 4 ou 5 em cada item, informando sempre a quantidade e o perfil das respostas.",
   },
   {
     number: 8,
@@ -79,7 +79,7 @@ export const educaRows: readonly MatrixRow[] = [
     monitor: "Instituições que fornecem oportunidades e empresas identificadas nos anúncios.",
     purpose: "Conhecer a diversidade e a contribuição dos parceiros.",
     indicators: "Instituições fornecedoras; empresas anunciantes; anúncios por instituição e empresa.",
-    target: "Manter 100% dos anúncios vinculados à instituição ou empresa responsável e revisar trimestralmente a composição da rede.",
+    target: "Manter (100%) dos anúncios vinculados à instituição ou empresa responsável e revisar trimestralmente a composição da rede.",
   },
   {
     number: 9,
@@ -89,7 +89,7 @@ export const educaRows: readonly MatrixRow[] = [
     monitor: "Identificação, requisitos, localidade, condições e link de candidatura.",
     purpose: "Reduzir informações incompletas e encaminhamentos para oportunidades indisponíveis.",
     indicators: "Anúncios distintos; distribuição por tipo e localidade; percentual de registros completos e links válidos.",
-    target: "Manter 100% dos anúncios com identificação, requisitos e link; verificar mensalmente sua disponibilidade com as fontes responsáveis.",
+    target: "Manter (100%) dos anúncios com identificação, requisitos e link; verificar mensalmente sua disponibilidade com as fontes responsáveis.",
   },
   {
     number: 10,
@@ -99,7 +99,7 @@ export const educaRows: readonly MatrixRow[] = [
     monitor: "Pessoas interessadas e oportunidades acompanhadas.",
     purpose: "Medir a procura sem confundir pessoas com quantidade de interesses.",
     indicators: "Usuários distintos interessados; registros de interesse por usuário e vaga; distribuição por tipo, empresa e localidade.",
-    target: "Estabelecer linha de base em 90 dias e acompanhar mensalmente a procura.",
+    target: "Estabelecer linha de base em (90) dias e acompanhar mensalmente a procura.",
   },
   {
     number: 11,
@@ -109,7 +109,7 @@ export const educaRows: readonly MatrixRow[] = [
     monitor: "Retorno do usuário informando participação no processo seletivo.",
     purpose: "Distinguir interesse no Educa de candidatura declarada.",
     indicators: "Candidaturas declaradas; percentual de interesses que evoluem para participação declarada na mesma coorte.",
-    target: "Buscar 50% de participação declarada em até 30 dias após o primeiro interesse registrado.",
+    target: "Buscar (50%) de participação declarada em até (30) dias após o primeiro interesse registrado.",
   },
   {
     number: 12,
@@ -119,7 +119,7 @@ export const educaRows: readonly MatrixRow[] = [
     monitor: "Contratação, não aprovação, desistência e ausência de informação.",
     purpose: "Conhecer os desfechos sem classificar silêncio como reprovação.",
     indicators: "Percentual de processos com resultado informado; distribuição dos desfechos; casos sem informação.",
-    target: "Buscar 60% de desfechos informados em até 90 dias, mediante incentivo ao retorno dos participantes.",
+    target: "Buscar (60%) de desfechos informados em até (90) dias, mediante incentivo ao retorno dos participantes.",
   },
   {
     number: 13,
@@ -129,6 +129,6 @@ export const educaRows: readonly MatrixRow[] = [
     monitor: "Contratações declaradas e pessoas que relatam obtenção de oportunidade.",
     purpose: "Acompanhar resultados profissionais associados à utilização do Educa.",
     indicators: "Contratações declaradas; usuários distintos que declararam contratação; proporção entre participantes da mesma coorte.",
-    target: "Estabelecer linha de base antes de fixar uma taxa de contratação e acompanhar sua evolução trimestralmente. Identificar a origem da informação em 100% dos relatórios.",
+    target: "Estabelecer linha de base antes de fixar uma taxa de contratação e acompanhar sua evolução trimestralmente. Identificar a origem da informação em (100%) dos relatórios.",
   },
 ];
