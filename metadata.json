@@ -1,6 +1,6 @@
 {
   "name": "Matriz de Métricas, Indicadores e Metas",
-  "description": "Matriz de Métricas, Indicadores e Metas",
+  "description": "Visão executiva e matrizes de acompanhamento do Componente ASG e ODS, CRA-SP Educa e Programa de Desenvolvimento Profissional.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": []
 }
