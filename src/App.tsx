@@ -4,7 +4,6 @@
  */
 
 import { useEffect, useState } from 'react';
-import { Activity } from 'lucide-react';
 import type { ProductId } from './types';
 import { products } from './data/products';
 import { ProductTabs } from './components/ProductTabs';
@@ -36,24 +35,18 @@ export default function App() {
     }}>Ir para o conteúdo</a>
     <main className="work-page-container">
       <header className="page-heading">
-        <div className="page-title"><span>CRA-SP · Gestão e acompanhamento</span>
-          <h1>Métricas, indicadores e metas</h1></div>
+        <h1>Métricas, indicadores e metas</h1>
         <ProductTabs products={products} activeId={activeId} onSelect={selectProduct} />
       </header>
       {products.map((item) => <section key={item.id} id={`product-panel-${item.id}`} role="tabpanel"
         aria-labelledby={`product-tab-${item.id}`} className="product-panel" hidden={item.id !== activeId}>
-        {item.id === activeId && <>
-        <div id="executive-content" className="product-heading" tabIndex={-1}>
-          <div><h2>{product.name}</h2><p>{product.subtitle}</p></div>
-          <span className="data-status"><Activity size={13} strokeWidth={1.8} aria-hidden="true" />
-            Aguardando apuração</span>
-        </div>
-        <KpiCards kpis={product.kpis} />
-        <ExecutiveCharts product={product} />
-        <MatrixTable product={product} />
-        </>}
+        {item.id === activeId && <div id="executive-content" className="product-content" tabIndex={-1}>
+          <h2 className="sr-only">{product.name}</h2>
+          <KpiCards kpis={product.kpis} />
+          <ExecutiveCharts product={product} />
+          <MatrixTable product={product} />
+        </div>}
       </section>)}
-      <footer className="page-footer">CRA-SP · Visão executiva e referências de acompanhamento</footer>
     </main>
   </>;
 }

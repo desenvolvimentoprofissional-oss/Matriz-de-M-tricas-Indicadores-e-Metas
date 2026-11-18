@@ -11,10 +11,8 @@ const slate = '#71839f';
 export const products: readonly ProductDefinition[] = [
   {
     id: 'asg',
-    label: 'Componente ASG e ODS',
+    label: 'ASG e ODS',
     name: 'Componente Curricular ASG e ODS',
-    subtitle: 'Adesão institucional, alcance educacional e resultados da aplicação.',
-    matrixDescription: 'Acompanhamento da cooperação, implantação e aplicação do componente nas IES.',
     targetHeading: 'Metas sugeridas ou parâmetros dos modelos',
     rows: asgRows,
     notes: [
@@ -53,8 +51,6 @@ export const products: readonly ProductDefinition[] = [
     id: 'educa',
     label: 'CRA-SP Educa',
     name: 'CRA-SP Educa',
-    subtitle: 'Acesso à formação, desenvolvimento das jornadas e oportunidades de mercado.',
-    matrixDescription: 'Cursos e vagas de mercado, com acompanhamento das instituições participantes.',
     targetHeading: 'Metas sugeridas',
     rows: educaRows,
     notes: [
@@ -91,10 +87,8 @@ export const products: readonly ProductDefinition[] = [
   },
   {
     id: 'pdp',
-    label: 'Programa de Desenvolvimento Profissional',
+    label: 'PDP CRA-SP',
     name: 'Programa de Desenvolvimento Profissional',
-    subtitle: 'A Distinção Profissional como resultado central da jornada de desenvolvimento.',
-    matrixDescription: 'Cursos Livres, Trilhas de Aprendizagem, Distinção Profissional, Pós-graduação e Certificações de Mercado.',
     targetHeading: 'Metas sugeridas',
     rows: pdpRows,
     notes: [

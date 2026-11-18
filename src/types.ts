@@ -39,8 +39,6 @@ export interface ProductDefinition {
   id: ProductId;
   label: string;
   name: string;
-  subtitle: string;
-  matrixDescription: string;
   targetHeading: string;
   rows: readonly MatrixRow[];
   notes: readonly string[];

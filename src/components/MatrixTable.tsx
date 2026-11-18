@@ -5,9 +5,8 @@ export function MatrixTable({ product }: { product: ProductDefinition }) {
   const titleId = `matrix-title-${product.id}`;
   return <section className="matrix-section" aria-labelledby={titleId}>
     <header className="matrix-heading">
-      <div><div className="section-title"><ListChecks size={18} strokeWidth={1.6} aria-hidden="true" />
-        <h3 id={titleId}>Matriz de métricas, indicadores e metas</h3></div>
-        <p>{product.matrixDescription}</p>
+      <div className="section-title"><ListChecks size={18} strokeWidth={1.6} aria-hidden="true" />
+        <h3 id={titleId}>Matriz de métricas, indicadores e metas</h3>
       </div>
       <span className="matrix-count">{product.rows.length} itens</span>
     </header>

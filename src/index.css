@@ -26,21 +26,15 @@ button, a, [tabindex] { -webkit-tap-highlight-color: transparent; }
 button { touch-action: manipulation; }
 figure, h1, h2, h3, h4, p { margin: 0; }
 .work-page-container { width: 100%; max-width: 1440px; margin: 0 auto; padding: 0 32px 24px; }
-.page-heading { min-height: 103px; padding: 20px 0; display: flex; align-items: center; justify-content: space-between; gap: 20px; border-bottom: 1px solid #e2e5ec; }
-.page-title { flex-shrink: 0; }
-.page-title > span { color: #718096; font-size: 10px; font-weight: 600; letter-spacing: .045em; }
-h1 { margin-top: 8px; color: #1e293b; font-size: 20px; font-weight: 700; letter-spacing: -.6px; line-height: 1.3; }
-.product-tabs-shell { min-width: 0; padding: 4px; border: 1px solid #e2e5ec; border-radius: 8px; background: #fff; }
-.product-tabs { display: flex; gap: 2px; }
-.product-tabs button { padding: 6px 10px; border: 0; border-radius: 6px; background: transparent; color: #59677c; cursor: pointer; font-size: 12px; font-weight: 500; line-height: 1.45; transition: color .15s, background .15s; }
+.page-heading { min-height: 72px; padding: 16px 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; border-bottom: 1px solid #e2e5ec; }
+h1 { color: #1e293b; font-size: 20px; font-weight: 700; letter-spacing: -.6px; line-height: 1.3; }
+.product-tabs-shell { width: 408px; max-width: 100%; min-width: 0; padding: 4px; border: 1px solid #e2e5ec; border-radius: 8px; background: #fff; }
+.product-tabs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2px; }
+.product-tabs button { display: flex; align-items: center; justify-content: center; min-width: 0; min-height: 30px; padding: 6px 10px; border: 0; border-radius: 6px; background: transparent; color: #59677c; cursor: pointer; font-size: 12px; font-weight: 500; line-height: 1.45; white-space: nowrap; transition: color .15s, background .15s; }
 .product-tabs button:hover { background: #f8f9fb; color: #1e293b; }
 .product-tabs button[aria-selected='true'] { background: #172554; color: #fff; font-weight: 600; }
 .product-panel { padding-top: 26px; }
-.product-heading { display: flex; justify-content: space-between; align-items: center; gap: 18px; margin-bottom: 22px; }
-.product-heading:focus { outline: none; }
-h2 { color: #1e293b; font-size: 18px; font-weight: 700; letter-spacing: -.35px; line-height: 1.5; }
-.product-heading p { margin-top: 5px; color: #64748b; font-size: 12px; line-height: 1.7; }
-.data-status { display: inline-flex; align-items: center; flex-shrink: 0; gap: 7px; padding: 7px 10px; background: #eef1f6; border: 1px solid #e1e6ee; border-radius: 6px; color: #65738a; font-size: 10px; font-weight: 500; }
+.product-content:focus { outline: none; }
 .kpi-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-bottom: 20px; }
 .kpi-card { min-width: 0; min-height: 158px; padding: 20px; border: 1px solid #e2e5ec; border-radius: 12px; background: #fff; }
 .kpi-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
@@ -75,7 +69,6 @@ h2 { color: #1e293b; font-size: 18px; font-weight: 700; letter-spacing: -.35px; 
 .chart-footnote { color: #64748b; font-size: 11px; text-align: center; line-height: 1.6; }
 .matrix-heading { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 14px; }
 .matrix-heading .section-title h3 { font-size: 14px; }
-.matrix-heading p { color: #64748b; font-size: 11px; line-height: 1.7; margin-top: 5px; }
 .matrix-count { padding: 5px 9px; color: #64748b; border: 1px solid #e2e5ec; border-radius: 6px; background: #fff; font-size: 10px; font-weight: 600; white-space: nowrap; }
 .matrix-card { border: 1px solid #e2e5ec; border-radius: 12px; background: #fff; overflow: hidden; }
 .matrix-reference-note { display: flex; align-items: center; gap: 8px; padding: 13px 18px; border-bottom: 1px solid #e2e5ec; color: #64748b; font-size: 11px; line-height: 1.6; }
@@ -104,29 +97,24 @@ tbody tr:hover { background: #fbfcfe; }
 .matrix-notes h4 { color: #59677c; font-size: 11px; font-weight: 600; margin-bottom: 8px; }
 .matrix-notes ul { margin: 0; padding-left: 15px; color: #64748b; font-size: 11px; line-height: 1.9; }
 .matrix-notes li + li { margin-top: 4px; }
-.page-footer { color: #64748b; font-size: 10px; text-align: center; padding-top: 25px; }
 .skip-link { position: fixed; top: 8px; left: 8px; z-index: 10; transform: translateY(-150%); padding: 12px 18px; border-radius: 6px; background: #172554; color: #fff; font-size: 13px; }
 .skip-link:focus { transform: translateY(0); }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 
 @media (min-width: 1600px) { .work-page-container { max-width: 1536px; } }
 @media (max-width: 1190px) {
-  .page-heading { align-items: flex-start; flex-direction: column; gap: 16px; }
-  .product-tabs button { font-size: 12px; padding: 9px 13px; }
   .distribution-content { flex-direction: column; gap: 0; padding: 8px 0 12px; }
   .donut-plot { width: 175px; max-width: 100%; }
   .distribution-content > .chart-legend { max-width: 100%; flex-direction: row; justify-content: center; gap: 9px 12px; }
 }
 @media (max-width: 760px) {
   .work-page-container { padding: 0 18px 20px; }
-  .page-heading { min-height: auto; padding: 20px 0 16px; }
+  .page-heading { min-height: auto; padding: 20px 0 16px; align-items: flex-start; flex-direction: column; }
   h1 { font-size: 19px; }
   .product-tabs-shell { width: 100%; }
-  .product-tabs { width: 100%; align-items: stretch; }
-  .product-tabs button { flex: 1; font-size: 11px; line-height: 1.65; padding: 8px; }
+  .product-tabs { width: 100%; }
+  .product-tabs button { font-size: 11px; padding: 6px 8px; }
   .product-panel { padding-top: 20px; }
-  .product-heading { align-items: flex-start; flex-direction: column; gap: 12px; }
-  h2 { font-size: 17px; }
   .kpi-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
   .kpi-card { padding: 16px; min-height: 155px; }
   .kpi-heading h3 { font-size: 11px; }

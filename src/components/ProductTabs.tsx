@@ -25,6 +25,7 @@ export function ProductTabs({ products, activeId, onSelect }: Props) {
         type="button"
         role="tab"
         id={`product-tab-${product.id}`}
+        title={product.name}
         aria-selected={product.id === activeId}
         aria-controls={`product-panel-${product.id}`}
         tabIndex={product.id === activeId ? 0 : -1}
